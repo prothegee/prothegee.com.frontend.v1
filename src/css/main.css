@@ -1,0 +1,144 @@
+/* import */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+
+
+
+
+
+
+/* tag */
+body
+{
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+/* id */
+
+
+
+
+
+
+
+
+/* class */
+.hidden
+{
+    display: none !important;
+}
+
+
+
+
+.c-primary
+{
+    color: #ec008c;
+}
+
+
+
+
+.c-secondary
+{
+    color: #f1592a;
+}
+
+
+
+
+.c-tertiary
+{
+    color: #0f75bc;
+}
+
+
+
+
+.bg-primary
+{
+    background-color: #ec008c;
+}
+
+
+
+
+.bg-secondary
+{
+    background-color: #f1592a;
+}
+
+
+
+
+.bg-tertiary
+{
+    background-color: #0f75bc;
+}
+
+
+
+
+.bg-dark
+{
+    /* mid dark */
+    background-color: #202020;
+}
+
+
+
+
+.bg-white
+{
+    background-color: #ffffff;
+}
+
+
+
+
+.btn-round
+{
+    border-radius: 32px;
+}
+
+
+
+
+.text-center
+{
+    text-align: center;
+}
+
+
+
+
+.text-left
+{
+    text-align: left;
+}
+
+
+
+
+.text-right
+{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+/* others */

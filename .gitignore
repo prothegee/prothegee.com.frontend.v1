@@ -1,6 +1,7 @@
 ###
 ### internal directories
 ###
+node_modules/
 
 
 ###
@@ -11,6 +12,7 @@
 ###
 ### internal files
 ###
+package-lock.json
 
 
 ###
