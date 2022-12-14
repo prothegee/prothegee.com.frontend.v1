@@ -1,5 +1,5 @@
 <script>
-    import "../../../css/override.css";
+    import "../../../../css/override.css";
 </script>
 
 
