@@ -1,0 +1,44 @@
+{
+    "name": "prothegee.com.frontend.v1",
+    "version": "1.0.0",
+    "description": "frontend v1 source directory, this is related to backend v1 and public access page source build",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "echo \"Error: dev script is reserved\" && exit 1",
+        "build": "echo \"Error: build script is reserved\" && exit 1",
+        "build::www": "rollup -c ./configs/www.config.js",
+        "watch": "echo \"Error: watch script is reserved\" && exit 1",
+        "watch::www": "rollup -c ./configs/www.config.js --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/prothegee/prothegee.com.frontend.v1.git"
+    },
+    "author": "Prana Ron @prothegee",
+    "license": "prothegee.com",
+    "bugs": {
+        "url": "https://github.com/prothegee/prothegee.com.frontend.v1/issues"
+    },
+    "homepage": "https://github.com/prothegee/prothegee.com.frontend.v1#readme",
+    "dependencies": {
+        "svelte": "^3.55.0"
+    },
+    "devDependencies": {
+        "@carbon/charts-svelte": "^1.6.2",
+        "@rollup/plugin-multi-entry": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-strip": "^3.0.1",
+        "@rollup/plugin-terser": "^0.2.0",
+        "carbon-components-svelte": "^0.70.13",
+        "carbon-icons-svelte": "^11.4.0",
+        "carbon-pictograms-svelte": "^12.2.0",
+        "carbon-preprocess-svelte": "^0.9.1",
+        "clipboard-copy": "^4.0.1",
+        "d3": "^7.7.0",
+        "rollup": "^3.7.4",
+        "rollup-plugin-css-only": "^4.3.0",
+        "rollup-plugin-svelte": "^7.1.0"
+    },
+    "type": "module"
+}
