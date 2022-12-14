@@ -7,9 +7,11 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "echo \"Error: dev script is reserved\" && exit 1",
         "build": "echo \"Error: build script is reserved\" && exit 1",
-        "build::www": "rollup -c ./configs/www.config.js",
+        "build::www": "rollup -c ./configs/www.config.js --bundleConfigAsCjs",
+        "build::webauth": "rollup -c ./configs/auth.config.js --bundleConfigAsCjs",
         "watch": "echo \"Error: watch script is reserved\" && exit 1",
-        "watch::www": "rollup -c ./configs/www.config.js --watch"
+        "watch::www": "rollup -c ./configs/www.config.js --watch",
+        "watch::webauth": "rollup -c ./configs/auth.config.js --watch"
     },
     "repository": {
         "type": "git",
