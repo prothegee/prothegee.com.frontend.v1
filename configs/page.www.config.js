@@ -23,7 +23,7 @@ export default [
     {
         //#region home
         input: [
-            "src/pages/www/home.js",
+            "src/pages/www/home.ts",
         ],
         output: {
             sourcemap: !__production__,
@@ -57,7 +57,8 @@ export default [
                     esModuleInterop: true,
                     forceConsistentCasingInFileNames: true,
                     skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"]
+                    typeRoots: ["node_modules/@types/"],
+                    types: ["svelte"]
                 }
             }),
             commonjs({

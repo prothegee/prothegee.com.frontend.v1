@@ -28,7 +28,7 @@ export default [
     {
         //#region signin
         input: [
-            "src/pages/auth/signin.js",
+            "src/pages/auth/signin.ts",
         ],
         output: {
             sourcemap: !__production__,
@@ -62,7 +62,8 @@ export default [
                     esModuleInterop: true,
                     forceConsistentCasingInFileNames: true,
                     skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"]
+                    typeRoots: ["node_modules/@types/"],
+                    types: ["svelte"]
                 }
             }),
             commonjs({
@@ -74,7 +75,7 @@ export default [
     {
         //#region signup
         input: [
-            "src/pages/auth/signup.js",
+            "src/pages/auth/signup.ts",
         ],
         output: {
             sourcemap: !__production__,
@@ -108,7 +109,8 @@ export default [
                     esModuleInterop: true,
                     forceConsistentCasingInFileNames: true,
                     skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"]
+                    typeRoots: ["node_modules/@types/"],
+                    types: ["svelte"]
                 }
             }),
             commonjs({

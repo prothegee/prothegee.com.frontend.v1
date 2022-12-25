@@ -8,7 +8,6 @@ export default class CConstPub
     server_time: any;
     zone_time: any;
 
-    username: any;
     language: any;
 
     YYYY: any;
@@ -19,8 +18,7 @@ export default class CConstPub
 
     base_domain: any;
     base_url: any;
-    cdn_profile: any;
-    token_id: any;
+    jsessionid: any;
 
 
     constructor()
@@ -32,8 +30,6 @@ export default class CConstPub
         // @ts-ignore
         this.zone_time = HeadPub.zone_time;
 
-        // @ts-ignore
-        this.username = HeadPub.username;
         // @ts-ignore
         this.language = HeadPub.language;
 
@@ -52,8 +48,6 @@ export default class CConstPub
         // @ts-ignore
         this.base_url = HeadPub.base_url;
         // @ts-ignore
-        this.cdn_profile = HeadPub.cdn_profile;
-        // @ts-ignore
-        this.token_id = HeadPub.token_id;
+        this.jsessionid = HeadPub.jsessionid;
     }
 }; // class CConstPub
