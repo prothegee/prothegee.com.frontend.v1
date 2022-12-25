@@ -1,5 +1,5 @@
-<script>
-    import "../../css/override.css";
+<script lang="ts">
+    import "../../../css/main.css";
 </script>
 
 

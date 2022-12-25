@@ -7,11 +7,11 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "echo \"Error: dev script is reserved\" && exit 1",
         "build": "echo \"Error: build script is reserved\" && exit 1",
-        "build::www": "rollup -c ./configs/www.config.js --bundleConfigAsCjs",
-        "build::webauth": "rollup -c ./configs/auth.config.js --bundleConfigAsCjs",
+        "build::auth": "rollup -c ./configs/page.auth.config.js --bundleConfigAsCjs",
+        "build::www": "rollup -c ./configs/page.www.config.js --bundleConfigAsCjs",
         "watch": "echo \"Error: watch script is reserved\" && exit 1",
-        "watch::www": "rollup -c ./configs/www.config.js --watch",
-        "watch::webauth": "rollup -c ./configs/auth.config.js --watch"
+        "watch::auth": "rollup -c ./configs/page.auth.config.js --watch",
+        "watch::www": "rollup -c ./configs/page.www.config.js --watch"
     },
     "repository": {
         "type": "git",
@@ -23,24 +23,25 @@
         "url": "https://github.com/prothegee/prothegee.com.frontend.v1/issues"
     },
     "homepage": "https://github.com/prothegee/prothegee.com.frontend.v1#readme",
-    "dependencies": {
-        "svelte": "^3.55.0"
-    },
     "devDependencies": {
-        "@carbon/charts-svelte": "^1.6.2",
+        "@rollup/plugin-commonjs": "^24.0.0",
         "@rollup/plugin-multi-entry": "^6.0.0",
         "@rollup/plugin-node-resolve": "^15.0.1",
-        "@rollup/plugin-strip": "^3.0.1",
-        "@rollup/plugin-terser": "^0.2.0",
-        "carbon-components-svelte": "^0.70.13",
-        "carbon-icons-svelte": "^11.4.0",
-        "carbon-pictograms-svelte": "^12.2.0",
-        "carbon-preprocess-svelte": "^0.9.1",
+        "@rollup/plugin-strip": "^3.0.2",
+        "@rollup/plugin-terser": "^0.2.1",
+        "@rollup/plugin-typescript": "^10.0.1",
+        "@tsconfig/svelte": "^3.0.0",
+        "bootstrap": "^5.2.3",
+        "bootstrap-icons": "^1.10.2",
         "clipboard-copy": "^4.0.1",
-        "d3": "^7.7.0",
-        "rollup": "^3.7.4",
+        "d3": "^7.8.0",
+        "rollup": "^3.8.1",
         "rollup-plugin-css-only": "^4.3.0",
-        "rollup-plugin-svelte": "^7.1.0"
+        "rollup-plugin-svelte": "^7.1.0",
+        "svelte": "^3.55.0",
+        "svelte-preprocess": "^5.0.0",
+        "tslib": "^2.4.1",
+        "typescript": "^4.9.4"
     },
     "type": "module"
 }
