@@ -19,8 +19,10 @@ const __production__ = !process.env.ROLLUP_WATCH;
 
 const __distribution_path__ = "../prothegee.com.public/dist/auth/";
 
-const __signin__ = "signin-bundle";
-const __signup__ = "signup-bundle";
+const __signIn__ = "signIn-bundle";
+const __signUp__ = "signUp-bundle";
+const __emailVerification__ = "emailVerification-bundle";
+const __resetPassword__ = "resetPassword-bundle";
 
 
 // only for web auth page
@@ -28,13 +30,13 @@ export default [
     {
         //#region signin
         input: [
-            "src/pages/auth/signin.ts",
+            "src/pages/auth/signIn.ts",
         ],
         output: {
             sourcemap: !__production__,
             format: "cjs",
-            name: __signin__,
-            file: __distribution_path__ + __signin__ + ".js"
+            name: __signIn__,
+            file: __distribution_path__ + __signIn__ + ".js"
         },
         plugins: [
             svelte({
@@ -50,7 +52,7 @@ export default [
             }),
             __production__ && terser(),
             css({
-                output: __signin__ + ".css"
+                output: __signIn__ + ".css"
             }),
             typescript({
                 include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
@@ -75,13 +77,13 @@ export default [
     {
         //#region signup
         input: [
-            "src/pages/auth/signup.ts",
+            "src/pages/auth/signUp.ts",
         ],
         output: {
             sourcemap: !__production__,
             format: "cjs",
-            name: __signup__,
-            file: __distribution_path__ + __signup__ + ".js"
+            name: __signUp__,
+            file: __distribution_path__ + __signUp__ + ".js"
         },
         plugins: [
             svelte({
@@ -97,7 +99,101 @@ export default [
             }),
             __production__ && terser(),
             css({
-                output: __signup__ + ".css"
+                output: __signUp__ + ".css"
+            }),
+            typescript({
+                include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
+                exclude: [],
+                compilerOptions: {
+                    module: "esnext",
+                    target: "esnext",
+                    moduleResolution: "node",
+                    esModuleInterop: true,
+                    forceConsistentCasingInFileNames: true,
+                    skipLibCheck: true,
+                    typeRoots: ["node_modules/@types/"],
+                    types: ["svelte"]
+                }
+            }),
+            commonjs({
+                extensions: [".js", ".ts"]
+            }),
+        ]
+        //#endregion
+    },
+    {
+        //#region emailVerification
+        input: [
+            "src/pages/auth/emailVerification.ts",
+        ],
+        output: {
+            sourcemap: !__production__,
+            format: "cjs",
+            name: __emailVerification__,
+            file: __distribution_path__ + __emailVerification__ + ".js"
+        },
+        plugins: [
+            svelte({
+                preprocess: [
+                    autoProcess()
+                ],
+                compilerOptions: { dev: !__production__ },
+            }),
+            multi(),
+            nodeResolve(),
+            strip({
+                labels: ["console.*", "assert.*"]
+            }),
+            __production__ && terser(),
+            css({
+                output: __emailVerification__ + ".css"
+            }),
+            typescript({
+                include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
+                exclude: [],
+                compilerOptions: {
+                    module: "esnext",
+                    target: "esnext",
+                    moduleResolution: "node",
+                    esModuleInterop: true,
+                    forceConsistentCasingInFileNames: true,
+                    skipLibCheck: true,
+                    typeRoots: ["node_modules/@types/"],
+                    types: ["svelte"]
+                }
+            }),
+            commonjs({
+                extensions: [".js", ".ts"]
+            }),
+        ]
+        //#endregion
+    },
+    {
+        //#region resetPassword
+        input: [
+            "src/pages/auth/emailVerification.ts",
+        ],
+        output: {
+            sourcemap: !__production__,
+            format: "cjs",
+            name: __resetPassword__,
+            file: __distribution_path__ + __resetPassword__ + ".js"
+        },
+        plugins: [
+            svelte({
+                preprocess: [
+                    autoProcess()
+                ],
+                compilerOptions: { dev: !__production__ },
+            }),
+            multi(),
+            nodeResolve(),
+            strip({
+                labels: ["console.*", "assert.*"]
+            }),
+            __production__ && terser(),
+            css({
+                output: __resetPassword__ + ".css"
             }),
             typescript({
                 include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
