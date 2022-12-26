@@ -11,6 +11,7 @@ import css from "rollup-plugin-css-only";
 import autoProcess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
 import commonjs from "@rollup/plugin-commonjs";
+import copy from "rollup-plugin-copy";
 
 
 
@@ -71,6 +72,15 @@ export default [
             commonjs({
                 extensions: [".js", ".ts"]
             }),
+            copy({
+                targets:
+                [
+                    {
+                        src: "src/css/main.css",
+                        dest: __distribution_path__
+                    }
+                ]
+            }),
         ]
         //#endregion
     },
@@ -117,6 +127,15 @@ export default [
             }),
             commonjs({
                 extensions: [".js", ".ts"]
+            }),
+            copy({
+                targets:
+                [
+                    {
+                        src: "src/css/main.css",
+                        dest: __distribution_path__
+                    }
+                ]
             }),
         ]
         //#endregion
@@ -165,6 +184,15 @@ export default [
             commonjs({
                 extensions: [".js", ".ts"]
             }),
+            copy({
+                targets:
+                [
+                    {
+                        src: "src/css/main.css",
+                        dest: __distribution_path__
+                    }
+                ]
+            }),
         ]
         //#endregion
     },
@@ -211,6 +239,15 @@ export default [
             }),
             commonjs({
                 extensions: [".js", ".ts"]
+            }),
+            copy({
+                targets:
+                [
+                    {
+                        src: "src/css/main.css",
+                        dest: __distribution_path__
+                    }
+                ]
             }),
         ]
         //#endregion

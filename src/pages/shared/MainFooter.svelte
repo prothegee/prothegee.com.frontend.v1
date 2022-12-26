@@ -1,6 +1,10 @@
+<svelte:head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</svelte:head>
 <script>
-    import "carbon-components-svelte/css/all.css";
-    import "../../../../css/override.css";
+    import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+    import "../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+    import "../../css/main.css";
 </script>
 
 
@@ -10,7 +14,9 @@
 
 
 
-<!--  -->
+<footer>
+    footer
+</footer>
 
 
 

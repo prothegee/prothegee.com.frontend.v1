@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
     import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-    import "../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+    import "bootstrap/dist/js/bootstrap.bundle.min";
     import "../../css/main.css";
 </script>
 
@@ -14,10 +14,9 @@
 
 
 
-<nav>
-    navigation
-</nav>
-
+<main>
+    
+</main>
 
 
 
