@@ -88,6 +88,11 @@ body
 
 
 
+.bg-dark-mid
+{
+    /* mid dark */
+    background-color: #202020;
+}
 .bg-dark
 {
     /* mid dark */
