@@ -6,7 +6,6 @@ export default class CConstPub
 {
     is_production: any;
     server_time: any;
-    zone_time: any;
 
     language: any;
 
@@ -28,8 +27,6 @@ export default class CConstPub
         this.is_production = HeadPub.is_production;
         // @ts-ignore
         this.server_time = HeadPub.server_time;
-        // @ts-ignore
-        this.zone_time = HeadPub.zone_time;
 
         // @ts-ignore
         this.language = HeadPub.language;
