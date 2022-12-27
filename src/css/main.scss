@@ -1,5 +1,6 @@
 /* import */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import "../../node_modules/bootstrap//scss/functions";
 
 
 
@@ -9,13 +10,21 @@
 
 
 /* variables */
-$primary: #ec008c;
-$csecondary: #f1592a;
-$tertiary: #0f75bc;
-$cwhite: #ffffff;
-$cwhitemid: #efefef;
-$cdark: #181818;
-$cdarkmid: #202020;
+$primary: #f1592a;
+$secondary: #0f75bc;
+$tertiary: #ec008c;
+$white1: #ffffff;
+$white2: #efefef;
+$gray: #909090;
+$dark1: #181818;
+$dark2: #202020;
+
+$enable-shadows: true;
+
+
+
+
+@import "../../node_modules/bootstrap//scss/bootstrap.scss";
 
 
 
@@ -66,7 +75,7 @@ body
 
 .color-secondary
 {
-    color: $csecondary;
+    color: $secondary;
 }
 
 
@@ -90,7 +99,7 @@ body
 
 .bg-secondary
 {
-    background-color: $csecondary;
+    background-color: $secondary;
 }
 
 
@@ -107,12 +116,12 @@ body
 .bg-dark
 {
     /* mid dark */
-    background-color: $cdark;
+    background-color: $dark1;
 }
 .bg-dark-mid
 {
     /* mid dark */
-    background-color: $cdarkmid;
+    background-color: $dark2;
 }
 
 
@@ -120,11 +129,11 @@ body
 
 .bg-white
 {
-    background-color: $cwhite;
+    background-color: $white1;
 }
 .bg-white-mid
 {
-    background-color: $cwhitemid;
+    background-color: $white2;
 }
 
 
