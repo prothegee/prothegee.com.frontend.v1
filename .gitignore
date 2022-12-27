@@ -18,3 +18,5 @@ package-lock.json
 ###
 ### internal specific
 ###
+src/css/main.css
+src/css/main.css.map

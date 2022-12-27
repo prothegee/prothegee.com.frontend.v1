@@ -8,6 +8,22 @@
 
 
 
+/* variables */
+$primary: #ec008c;
+$csecondary: #f1592a;
+$tertiary: #0f75bc;
+$cwhite: #ffffff;
+$cwhitemid: #efefef;
+$cdark: #181818;
+$cdarkmid: #202020;
+
+
+
+
+
+
+
+
 /* tag */
 body
 {
@@ -42,7 +58,7 @@ body
 
 .color-primary
 {
-    color: #ec008c;
+    color: $primary;
 }
 
 
@@ -50,7 +66,7 @@ body
 
 .color-secondary
 {
-    color: #f1592a;
+    color: $csecondary;
 }
 
 
@@ -58,7 +74,7 @@ body
 
 .color-tertiary
 {
-    color: #0f75bc;
+    color: $tertiary;
 }
 
 
@@ -66,7 +82,7 @@ body
 
 .bg-primary
 {
-    background-color: #ec008c;
+    background-color: $primary;
 }
 
 
@@ -74,7 +90,7 @@ body
 
 .bg-secondary
 {
-    background-color: #f1592a;
+    background-color: $csecondary;
 }
 
 
@@ -82,21 +98,21 @@ body
 
 .bg-tertiary
 {
-    background-color: #0f75bc;
+    background-color: $tertiary;
 }
 
 
 
 
-.bg-dark-mid
-{
-    /* mid dark */
-    background-color: #202020;
-}
 .bg-dark
 {
     /* mid dark */
-    background-color: #181818;
+    background-color: $cdark;
+}
+.bg-dark-mid
+{
+    /* mid dark */
+    background-color: $cdarkmid;
 }
 
 
@@ -104,7 +120,11 @@ body
 
 .bg-white
 {
-    background-color: #ffffff;
+    background-color: $cwhite;
+}
+.bg-white-mid
+{
+    background-color: $cwhitemid;
 }
 
 

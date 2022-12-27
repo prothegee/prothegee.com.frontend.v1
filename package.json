@@ -7,11 +7,13 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "echo \"Error: dev script is reserved\" && exit 1",
         "build": "echo \"Error: build script is reserved\" && exit 1",
-        "build::auth": "rollup -c ./configs/page.auth.config.js --bundleConfigAsCjs",
-        "build::www": "rollup -c ./configs/page.www.config.js --bundleConfigAsCjs",
         "watch": "echo \"Error: watch script is reserved\" && exit 1",
-        "watch::auth": "rollup -c ./configs/page.auth.config.js --watch",
-        "watch::www": "rollup -c ./configs/page.www.config.js --watch"
+        "g::build::auth": "npm run g::build::z::scss && rollup -c ./configs/page.auth.config.js --bundleConfigAsCjs",
+        "g::build::www": "npm run g::build::z::scss && rollup -c ./configs/page.www.config.js --bundleConfigAsCjs",
+        "g::build::z::scss": "sass ./src/css/main.scss ./src/css/main.css",
+        "g::watch::auth": "rollup -c ./configs/page.auth.config.js --watch",
+        "g::watch::www": "rollup -c ./configs/page.www.config.js --watch",
+        "g::watch::z::scss": "sass --watch ./src/css/main.scss ./src/css/main.css"
     },
     "repository": {
         "type": "git",
@@ -23,6 +25,9 @@
         "url": "https://github.com/prothegee/prothegee.com.frontend.v1/issues"
     },
     "homepage": "https://github.com/prothegee/prothegee.com.frontend.v1#readme",
+    "dependencies": {
+        "svelte": "^3.55.0"
+    },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^24.0.0",
         "@rollup/plugin-multi-entry": "^6.0.0",
@@ -39,7 +44,7 @@
         "rollup-plugin-copy": "^3.4.0",
         "rollup-plugin-css-only": "^4.3.0",
         "rollup-plugin-svelte": "^7.1.0",
-        "svelte": "^3.55.0",
+        "sass": "^1.57.1",
         "svelte-preprocess": "^5.0.0",
         "tslib": "^2.4.1",
         "typescript": "^4.9.4"

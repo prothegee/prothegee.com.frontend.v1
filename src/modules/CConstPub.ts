@@ -19,6 +19,7 @@ export default class CConstPub
     base_domain: any;
     base_url: any;
     jsessionid: any;
+    authtoken: any;
 
 
     constructor()
@@ -49,5 +50,7 @@ export default class CConstPub
         this.base_url = HeadPub.base_url;
         // @ts-ignore
         this.jsessionid = HeadPub.jsessionid;
+        // @ts-ignore
+        this.authtoken = HeadPub.authtoken;
     }
 }; // class CConstPub

@@ -11,9 +11,18 @@
     import MainFooter from "../../shared/MainFooter.svelte";
 
 
+    import CComonJs from "../../../modules/CComonJs";
+    import CConstPub from "../../../modules/CConstPub";
+    import CUrlPages from "../../../modules/CUrlPages";
 
 
-    // test #1
+
+
+    //#region constant
+    const ComonJs = new CComonJs();
+    const ConstPub = new CConstPub();
+    const UrlPages = new CUrlPages();
+    //#endregion
 </script>
 
 
@@ -38,7 +47,7 @@
 
     <!-- section2 -->
     <section class="section2">
-        <div class="toast align-items-center text-bg-primary border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast align-items-center text-bg-primary border-0 round-shape fade show" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
               <div class="toast-body">
                     Hello, world! This is a toast message.
