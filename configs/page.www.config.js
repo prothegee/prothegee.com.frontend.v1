@@ -69,7 +69,7 @@ export default [
                 targets:
                 [
                     {
-                        src: "src/css/main.css",
+                        src: ["src/css/main.css", "src/css/main.css.map"],
                         dest: __distribution_path__
                     }
                 ]

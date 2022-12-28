@@ -1,6 +1,6 @@
 
 /**
- * default constpub from const HeadPub backend v1
+ * default constpub from const HeadPub backend v1 javascript head tag
 */
 export default class CConstPub
 {

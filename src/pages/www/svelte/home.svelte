@@ -11,9 +11,9 @@
     import MainFooter from "../../shared/MainFooter.svelte";
 
 
-    import CComonJs from "../../../modules/CComonJs";
-    import CConstPub from "../../../modules/CConstPub";
-    import CUrlPages from "../../../modules/CUrlPages";
+    import CComonJs from "../../../libs/CComonJs";
+    import CConstPub from "../../../libs/CConstPub";
+    import CUrlPages from "../../../libs/CUrlPages";
 
 
 

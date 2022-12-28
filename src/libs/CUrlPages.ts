@@ -1,7 +1,7 @@
 // @ts-ignorec
 const defaultProtocol = HeadPub.is_production;
 // @ts-ignorec
-const defaultDomain = HeadPub.is_production;
+const defaultDomain = HeadPub.base_domain;
 
 
 // @ts-ignore
