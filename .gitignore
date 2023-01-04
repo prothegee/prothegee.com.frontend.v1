@@ -1,6 +1,7 @@
 ###
 ### internal directories
 ###
+.vscode/
 node_modules/
 
 
