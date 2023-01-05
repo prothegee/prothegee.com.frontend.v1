@@ -1,23 +1,19 @@
 ###
-### internal directories
+### directory
 ###
 .vscode/
 node_modules/
 
 
 ###
-### internal extensions
+### extension
 ###
+*.bak*
 
 
 ###
-### internal files
+### file
 ###
 package-lock.json
-
-
-###
-### internal specific
-###
 src/css/main.css
 src/css/main.css.map

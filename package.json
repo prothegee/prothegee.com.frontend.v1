@@ -8,12 +8,12 @@
         "dev": "echo \"Error: dev script is reserved\" && exit 1",
         "build": "echo \"Error: build script is reserved\" && exit 1",
         "watch": "echo \"Error: watch script is reserved\" && exit 1",
-        "g::build::auth": "npm run g::build::z::scss && rollup -c ./configs/page.auth.config.js --bundleConfigAsCjs",
-        "g::build::www": "npm run g::build::z::scss && rollup -c ./configs/page.www.config.js --bundleConfigAsCjs",
-        "g::build::z::scss": "sass ./src/css/main.scss ./src/css/main.css",
-        "g::watch::auth": "rollup -c ./configs/page.auth.config.js --watch",
-        "g::watch::www": "rollup -c ./configs/page.www.config.js --watch",
-        "g::watch::z::scss": "sass --watch ./src/css/main.scss ./src/css/main.css"
+        "build::auth": "npm run build::scss && rollup -c ./configs/page.auth.config.ts --bundleConfigAsCjs",
+        "build::www": "npm run build::scss && rollup -c ./configs/page.www.config.ts --bundleConfigAsCjs",
+        "build::scss": "sass ./src/css/main.scss ./src/css/main.css",
+        "watch::auth": "rollup -c ./configs/page.auth.config.ts --bundleConfigAsCjs --watch",
+        "watch::www": "rollup -c ./configs/page.www.config.ts --bundleConfigAsCjs --watch",
+        "watch::scss": "sass --watch ./src/css/main.scss ./src/css/main.css"
     },
     "repository": {
         "type": "git",
