@@ -1,0 +1,14 @@
+{
+    "include": ["src/**/*", "node_modules", "configs/**/*"],
+    "exclude": [],
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "typeRoots": ["node_modules/@types/"],
+        "types": ["svelte"]
+    }
+}

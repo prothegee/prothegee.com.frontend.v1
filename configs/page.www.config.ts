@@ -48,20 +48,7 @@ export default [
             css({
                 output: __home__ + ".css"
             }),
-            typescript({
-                include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
-                exclude: [],
-                compilerOptions: {
-                    module: "esnext",
-                    target: "esnext",
-                    moduleResolution: "node",
-                    esModuleInterop: true,
-                    forceConsistentCasingInFileNames: true,
-                    skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"],
-                    types: ["svelte"]
-                }
-            }),
+            typescript(),
             commonjs({
                 extensions: [".js", ".ts"]
             }),

@@ -55,20 +55,7 @@ export default [
             css({
                 output: __signIn__ + ".css"
             }),
-            typescript({
-                include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
-                exclude: [],
-                compilerOptions: {
-                    module: "esnext",
-                    target: "esnext",
-                    moduleResolution: "node",
-                    esModuleInterop: true,
-                    forceConsistentCasingInFileNames: true,
-                    skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"],
-                    types: ["svelte"]
-                }
-            }),
+            typescript(),
             commonjs({
                 extensions: [".js", ".ts"]
             }),
@@ -111,20 +98,7 @@ export default [
             css({
                 output: __signUp__ + ".css"
             }),
-            typescript({
-                include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
-                exclude: [],
-                compilerOptions: {
-                    module: "esnext",
-                    target: "esnext",
-                    moduleResolution: "node",
-                    esModuleInterop: true,
-                    forceConsistentCasingInFileNames: true,
-                    skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"],
-                    types: ["svelte"]
-                }
-            }),
+            typescript(),
             commonjs({
                 extensions: [".js", ".ts"]
             }),
@@ -167,20 +141,7 @@ export default [
             css({
                 output: __emailVerification__ + ".css"
             }),
-            typescript({
-                include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
-                exclude: [],
-                compilerOptions: {
-                    module: "esnext",
-                    target: "esnext",
-                    moduleResolution: "node",
-                    esModuleInterop: true,
-                    forceConsistentCasingInFileNames: true,
-                    skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"],
-                    types: ["svelte"]
-                }
-            }),
+            typescript(),
             commonjs({
                 extensions: [".js", ".ts"]
             }),
@@ -223,20 +184,7 @@ export default [
             css({
                 output: __resetPassword__ + ".css"
             }),
-            typescript({
-                include: ["src/**/*", "node_modules", "src/modules/**/*", "src/pages/**/*"],
-                exclude: [],
-                compilerOptions: {
-                    module: "esnext",
-                    target: "esnext",
-                    moduleResolution: "node",
-                    esModuleInterop: true,
-                    forceConsistentCasingInFileNames: true,
-                    skipLibCheck: true,
-                    typeRoots: ["node_modules/@types/"],
-                    types: ["svelte"]
-                }
-            }),
+            typescript(),
             commonjs({
                 extensions: [".js", ".ts"]
             }),
